@@ -16,8 +16,9 @@ jobs:
       - name: Check Coverage TDD
         run : npm run test:cov
         
-      - name: Upload
-        uses: codecov/codecov-action@v1
+      - name: Codecov
+        uses: codecov/codecov-action@v2
         with:
-          files: ./lib.c.gcov
+          token: 54fbb25c-4811-4fa0-9ee8-5ed7c4879812
+          flags: unittests
     
