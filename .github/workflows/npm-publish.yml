@@ -1,4 +1,0 @@
-aplication:
-  script:
-    - npm i
-    - npm start
