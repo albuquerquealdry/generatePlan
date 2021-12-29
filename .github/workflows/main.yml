@@ -21,4 +21,9 @@ jobs:
         with:
           token: 54fbb25c-4811-4fa0-9ee8-5ed7c4879812
           flags: unittests
-    
+  deploy:
+      runs-on : ubunto-latest
+      steps:
+        - uses : action/deploy@1
+        - name : Deploy na Dev
+          
