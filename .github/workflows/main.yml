@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu la-test
+    steps:
+      - name: Install Node
+          node-version:12.x
+      - run : npm i
+      - run : npm run start:dev
