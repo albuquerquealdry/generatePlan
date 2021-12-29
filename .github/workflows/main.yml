@@ -24,6 +24,8 @@ jobs:
   deploy:
       runs-on : ubunto-latest
       steps:
-        - uses : action/deploy@1
-        - name : Deploy na Dev
-          
+      - uses : action/deploy@1
+      - name : Deploy na Dev
+        with:
+            node-version : 12.x
+            run : cd src
