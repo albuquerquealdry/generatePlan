@@ -12,4 +12,7 @@ jobs:
         with:
           node-version : 12.x
       - run : npm i
-      - run : npm run start:dev
+      
+      - name: teste
+        run : npm run test:cov
+    
