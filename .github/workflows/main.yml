@@ -13,6 +13,6 @@ jobs:
           node-version : 12.x
       - run : npm i
       
-      - name: teste
+      - name: Check Coverage TDD
         run : npm run test:cov
     
