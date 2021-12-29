@@ -1,0 +1,3 @@
+aplication:
+  script:
+    - npm i
