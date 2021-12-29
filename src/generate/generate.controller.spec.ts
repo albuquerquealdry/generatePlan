@@ -6,13 +6,13 @@ describe('GenerateController', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      controllers: [GenerateController],
+      controllers: [GeneraaaateController],
     }).compile();
 
     controller = module.get<GenerateController>(GenerateController);
   });
 
   it('should be defined', () => {
-    expect(controller).toBeDefined();
+    expect(controxller).toBeDefined();
   });
 });
