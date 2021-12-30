@@ -34,7 +34,7 @@ jobs:
       - name: ls -a via ssh
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: cd / && cd home && cd ec2-user && mkdir test && git clone https://github.com/albuquerquealdry/generatePlan.git
+          command: cd / && cd home && cd ec2-user && git clone https://github.com/albuquerquealdry/generatePlan.git
           host: ${{ secrets.HOST }}
           username: ec2-user
           passphrase: ${{ secrets.PASSPHRASE }}
