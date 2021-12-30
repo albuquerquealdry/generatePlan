@@ -8,6 +8,7 @@ describe('GenerateController', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      providers: [GenerateService],
       controllers: [GenerateController],
     }).compile();
     service = new GenerateService()
