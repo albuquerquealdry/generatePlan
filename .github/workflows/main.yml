@@ -31,12 +31,12 @@ jobs:
       url : 'albuquerquealdry.com'
     needs: build
     steps:
-      - name: Deploy to my EC2 instance
-        uses: easingthemes/ssh-deploy@v2.1.5
-        env:
-            SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-            SOURCE: "./"
-            REMOTE_HOST: "ec2-3-16-150-13.us-east-2.compute.amazonaws.com"
-            REMOTE_USER: "ec2-user"
-            TARGET: "/home"
+      - name: ls -a via ssh
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: cd / && ls
+          host: ${{ secrets.HOST }}
+          username: ec2-user
+          passphrase: ${{ secrets.PASSPHRASE }}
+          privateKey: ${{ secrets.PRIVATE_KEY}}
 
