@@ -31,11 +31,12 @@ jobs:
       url : 'albuquerquealdry.com'
     needs: build
     steps:
-      - name: Deploy in Ambient Developer
-        run : git clone https://github.com/albuquerquealdry/ms-transporte
-      
-      - name: Enter init
-        run : ssh machine@192.168.56.101
-        
-      - name : Create Directory
-        run  : mkdir teste && cd teste
+      - name: ls -a via ssh
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            git clone https://github.com/albuquerquealdry/generatePlan.git
+            ls -a
+          host: 192.168.56.101
+          user: machine
+          key: machine
