@@ -38,5 +38,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ec2-user
           passphrase: ${{ secrets.PASSPHRASE }}
-          privateKey: ${{ secrets.PRIVATE_KEY}}
+          privateKey: ${{ secrets.EC2_SSH_KEY}}
 
