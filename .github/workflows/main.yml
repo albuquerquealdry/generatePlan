@@ -58,7 +58,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           privateKey: ${{ secrets.EC2_SSH_KEY}}
       
-      - name: Deploy Devops  Dev
+      - name: Heroku-Deploy
         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
