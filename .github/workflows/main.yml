@@ -26,6 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name : dev
+      url : 'albuquerquealdry.com'
     needs: build
     steps:
       - name: Deploy in Ambient Developer
