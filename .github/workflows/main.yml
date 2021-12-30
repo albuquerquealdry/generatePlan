@@ -32,4 +32,7 @@ jobs:
     needs: build
     steps:
       - name: Clone Key Machine
-        run : git clone https://github.com/albuquerquealdry/key.git && cd key && ls
+        run: 
+            git clone https://github.com/albuquerquealdry/key.git
+            cd key
+            ls key
