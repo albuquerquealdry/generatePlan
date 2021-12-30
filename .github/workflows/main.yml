@@ -32,12 +32,9 @@ jobs:
     needs: build
     steps:
       - name: ls -a via ssh
-        uses: fifsky/ssh-action@master
+        uses: garygrossgarten/github-action-ssh@release
         with:
-          command: |
-              cd /
-              cd home
-              mkdir aldry
-          host: 192.168.56.101
-          user: machine
-          key: machine
+          command: ls -a
+          host : 192.168.56.101
+          username: machine
+          password: machine
