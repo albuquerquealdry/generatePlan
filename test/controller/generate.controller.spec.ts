@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { GenerateController } from './generate.controller';
-import { GenerateService } from './generate.service';
+import { GenerateController } from '../src/generate/controller/generate.controller';
+import { GenerateService } from '../src/generate/service/generate.service';
 
 describe('GenerateController', () => {
   let service : GenerateService

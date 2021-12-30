@@ -1,5 +1,5 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import { GenerateService } from './generate.service';
+import { GenerateService } from '../service/generate.service';
 
 @Controller('generate')
 export class GenerateController {
@@ -7,7 +7,5 @@ export class GenerateController {
     @Post()
     userParseDate(@Body() body){
         return this.generateService.create(body)
-
     }
-
 }
