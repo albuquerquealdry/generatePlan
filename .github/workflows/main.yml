@@ -21,3 +21,15 @@ jobs:
         with:
           token: 54fbb25c-4811-4fa0-9ee8-5ed7c4879812
           flags: unittests
+
+  deploy-dev:
+    runs-on: ubuntu-latest
+    environment: 
+      name : dev
+    needs: build
+    steps:
+      - name: Deploy in Ambient Developer
+      - run : git clone https://github.com/albuquerquealdry/apidjango.git 
+      - run : ls
+      
+    
