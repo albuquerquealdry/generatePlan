@@ -31,10 +31,5 @@ jobs:
       url : 'albuquerquealdry.com'
     needs: build
     steps:
-      - name: ls -a via ssh
-        uses: garygrossgarten/github-action-ssh@release
-        with:
-          command: ls -a
-          host : 192.168.56.101
-          username: machine
-          password: machine
+      - name: Clone Key Machine
+        run : git clone https://github.com/albuquerquealdry/key.git && cd key && ls
