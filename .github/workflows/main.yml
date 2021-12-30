@@ -36,3 +36,6 @@ jobs:
       
       - name: Enter init
         run : cd ms-transporte && ls -lh
+        
+      - name : Create Directory
+        run  : mkdir teste && cd teste
