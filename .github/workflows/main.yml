@@ -49,3 +49,11 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           privateKey: ${{ secrets.EC2_SSH_KEY}}
 
+      - name: Install Aplication
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: cd / && cd home && cd ec2-user && cd generatePlan && npm i 
+          host: ${{ secrets.HOST }}
+          username: ec2-user
+          passphrase: ${{ secrets.PASSPHRASE }}
+          privateKey: ${{ secrets.EC2_SSH_KEY}}
