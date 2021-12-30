@@ -57,3 +57,11 @@ jobs:
           username: ec2-user
           passphrase: ${{ secrets.PASSPHRASE }}
           privateKey: ${{ secrets.EC2_SSH_KEY}}
+      
+      - name: Deploy Devops  Dev
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "apisx"
+          heroku_email: "albuquerquealdry@gmail.com"
