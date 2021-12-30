@@ -32,4 +32,10 @@ jobs:
     needs: build
     steps:
       - name: Deploy in Ambient Developer
-        run : git clone https://github.com/albuquerquealdry/apidjango.git
+        run : git clone https://github.com/albuquerquealdry/ms-transporte
+      
+      - name: Enter init
+        run : cd ms-transporte
+      
+      - name: Install Dependencies Repository
+        run : npm i
