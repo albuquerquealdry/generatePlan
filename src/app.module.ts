@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { GenerateController } from './generate/generate.controller';
-import { GenerateService } from './generate/generate.service';
+import { GenerateController } from './generate/controller/generate.controller';
+import { GenerateService } from './generate/service/generate.service';
 
 @Module({
   imports: [],
