@@ -7,6 +7,6 @@ export class GenerateService {
         body,
         "name": "aldry"
       }
-      return body 
+      return object
       }
 }
