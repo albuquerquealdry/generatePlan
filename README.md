@@ -1,6 +1,3 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://user-images.githubusercontent.com/85401149/163399150-07a55c72-5f58-45cb-9105-a220bb259600.png" width="320" alt="Nest Logo" /></a>
-</p>
 
 
 
